@@ -1,0 +1,179 @@
+html{
+  font-family: Dancing Script;
+}
+#contenido{
+  width: 900px;
+}
+header{
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  height: 100px;
+}
+header h1{
+  float: left;
+  margin-left: 30px;
+  text-shadow: 2px 2px #02010a;
+}
+header nav{
+  float: right;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+header nav a{
+  color: white;
+  font-size: 18px;
+  margin: 10px;
+}
+.actual{
+  text-decoration: none;
+}
+.bloque1 div img{
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px #02010a;
+}
+.contenedor1{
+  display: flex;
+  justify-content: center;
+}
+.bloque2 a figure img {
+  width: 100%;
+  border: 1px solid #02010a;
+}
+footer div a img{
+  width: 15px;
+}
+.bloque1{
+  background-color: #82c3a6;
+}
+.bloque2 {
+  display: flex;
+  flex-direction: row;
+  background-color: #d5c75f;
+}
+.bloque2 a{
+  width: 50%;
+}
+.contenedor2 img{
+  box-shadow: 2px 2px #02010a;
+  transition: transform, box-shadow,1s;
+}
+.contenedor2 img:hover {
+  transform: rotate(10deg);
+  box-shadow: 2px 2px #82c3a6;
+}
+.contenedor3 img{
+  box-shadow: 2px 2px #02010a;
+  transition: transform,box-shadow,1s;
+}
+.contenedor3 img:hover {
+  transform: translate(20px,-5px);
+  box-shadow: 2px 2px #82c3a6;
+}
+figcaption {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}
+body{
+  display: flex;
+  justify-content: center;
+  background-color: #02010a;
+}
+footer{
+  display: flex;
+  flex-direction: row;
+  background-color: #C6d5c5;
+  border-radius: 0 0 10px 10px;
+}
+footer div{
+  margin: 10px;
+  width: 25%;
+}
+
+.Retratos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #d5c75f ;
+}
+.Retratos div {
+  width: 33.33%;
+}
+.Retratos div:nth-child(even) {
+  filter: grayscale(100%);
+}
+.Retratos div:nth-child(1){
+  filter: blur(10px);
+}
+.Retratos div:nth-child(3){
+  filter: sepia(90%);
+}
+.Retratos div img {
+  width: 80%;
+  box-shadow: 2px 2px #02010a;
+  margin: 20px;
+}
+
+@media (max-width:900px) {
+  .contenedor{
+    width: 100%;
+  }
+  .bloque2{
+    display: flex;
+    flex-direction: column;
+  }
+  .bloque2 a {
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+  }
+  footer div {
+    margin-left: 50px;
+  }
+  header h1{
+    float: none;
+    text-align: center;
+  }
+  header nav{
+    float: none;
+    text-align: center;
+  }
+  header{
+    height: 100px;
+  }
+  .Retratos{
+    display: flex;
+    flex-direction: column;
+  }
+  .Retratos div {
+    width: 100%;
+  }
+}
+
+
+
+@keyframes animation {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+
+#contenido{
+  animation-name: animation;
+  animation-duration: 1.5s;
+}
